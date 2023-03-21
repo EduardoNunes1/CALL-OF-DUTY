@@ -7,5 +7,6 @@ namespace CALL_OF_DUTY.Models
         public string Nacionalidade { get; set; }
         public string Patente { get; set; }
         public string Imagem { get; set; }
+        public List<string> Tipo { get; set; }
     }
 }
