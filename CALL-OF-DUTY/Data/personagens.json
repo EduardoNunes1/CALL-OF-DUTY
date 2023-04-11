@@ -9,25 +9,26 @@
     "Numero": 2,
     "Nome": "Soap MacTavish",
     "Descricao": "Capitão John Price é um dos mais importantes personagens fictícios da série Call of Duty e um dos principais protagonistas, aparecendo como um soldado experiente assim como um líder forte. É de certa forma compassivo, mas por vezes também implacável.Traduzido do inglês-John soap MacTavish é um personagem fictício do arco da história Call of Duty Modern Warfare. Ele aparece pela primeira vez como um personagem jogável principal no videogame de 2007 Call of Duty",
-    "Imagem": "\\img\\personagens\\soap.webp"
+    "Imagem": "\\img\\personagens\\soap.webp",
+    "Tipo": "Vanguard"
   },
   {
     "Numero": 3,
     "Nome": "Capitão Woods",
     "Descricao": "Master Sergeant Frank Woods is a supporting character in Call of Duty: Black Ops, the deuteragonist and a playable character of the 1980s missions, a main character in the 2025 missions in Call of Duty: Black Ops II, a main playable character in Call of Duty: Black Ops: Declassified, a supporting character in Specialist HQ and a playable character for Blackout in Call of Duty: Black Ops 4, and a supporting character in Call of Duty: Black Ops Cold War.",
-    "Imagem": "\\img\\CALL-OF-DUTY\\personagens\\woods.webp"
+    "Imagem": "\\img\\personagens\\woods.webp"
   },
   {
     "Numero": 4,
     "Nome": "Alex Mason",
     "Descricao": "Alex Mason é um dos mais importantes personagens fictícios da série Call of Duty e um dos principais protagonistas da franquia, atuando como personagem principal na subsérie Call of Duty: Black Ops, aparecendo em quase todos os títulos da série. É um agente da CIA, sendo o personagem principal jogável em Black Ops.",
-    "Imagem": "\\img\\CALL-OF-DUTY\\personagens\\mason.png"
+    "Imagem": "\\img\\personagens\\mason.png"
   },
   {
     "Numero": 5,
     "Nome": "Ghost",
     "Descricao": "Traduzido do inglês-Simon Ghost Riley é um personagem fictício no arco de história de Call of Duty, Modern Warfare. Ele aparece pela primeira vez como um personagem não jogável em Call of Duty: Modern Warfare 2, onde é o segundo em comando do capitão Soap MacTavish",
-    "Imagem": "\\img\\CALL-OF-DUTY\\personagens\\ghost.png"
+    "Imagem": "\\img\\personagens\\ghost.png"
   }
 
 ]
