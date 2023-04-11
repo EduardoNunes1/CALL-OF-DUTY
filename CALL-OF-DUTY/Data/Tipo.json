@@ -2,5 +2,13 @@
     {
         "Nome": "Vanguard",
         "logo": "\\img\\logo\\vanguaard.jpg"
+    },
+    {
+        "Nome": "Black Ops",
+        "logo": "\\img\\logo\\BO.jpg"
+    },
+    {
+        "Nome": "Modern Warfare",
+        "logo": "\\img\\logo\\mw.png"
     }
 ]
