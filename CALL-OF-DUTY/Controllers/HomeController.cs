@@ -1,31 +1,37 @@
 ﻿using System.Diagnostics;
 using Microsoft.AspNetCore.Mvc;
 using CALL_OF_DUTY.Models;
-
+using CALL_OF_DUTY.Services;
 namespace CALL_OF_DUTY.Controllers;
-
 public class HomeController : Controller
 {
     private readonly ILogger<HomeController> _logger;
-
-    public HomeController(ILogger<HomeController> logger)
+    private readonly ICoDService _codService;
+    public HomeController(ILogger<HomeController> logger, ICoDService codService)
     {
         _logger = logger;
+        _codService = codService;
     }
-
-    public IActionResult Index()
+    public IActionResult Index(string tipo)
     {
-        return View();
+        var cods = _codService.GetCallOfDutyDto();
+        ViewData["filter"] = string.IsNullOrEmpty(tipo) ? "all" : tipo;
+        return View(cods);
     }
-
+    public IActionResult Details(int Numero)
+    {
+        var personagem = _codService.GetPersonagens(Numero);
+        Personagens.Tipos = _codService.GetTipos();
+        return View(personagem);
+    }
     public IActionResult Privacy()
     {
         return View();
     }
-
     [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
     public IActionResult Error()
     {
-        return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
+        return View(new ErrorViewModel { RequestId = Activity.Current?.Id
+        ?? HttpContext.TraceIdentifier });
     }
 }
