@@ -1,7 +1,7 @@
 using System.Text.Json;
-using CALL_OF_DUTY.Models;
+using CallOfDuty.Models;
 
-namespace CALL_OF_DUTY.Services;
+namespace CallOfDuty.Services;
 
 public class CoDService
 {

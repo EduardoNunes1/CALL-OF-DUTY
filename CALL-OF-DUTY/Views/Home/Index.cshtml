@@ -15,7 +15,7 @@
                 {
                     <button id="btn-@tipo.Nome.ToLower()" class="btn btn-sm my-2 text-white btn-filter"
                         onclick="filter('@tipo.Nome.ToLower()')"
-                        style="background-color:@tipo.Cor">
+                        style="background-color:@tipo.logo">
                         @tipo.Nome
                     </button>
                 }
@@ -42,7 +42,7 @@
                                 <div class="btn-group">
                                     @foreach (var tipo in personagem.Tipo)
                                     {
-                                        <a asp-action="Index" asp-route-tipo="@tipo.ToLower()" class="btn my-2 text-white" style="background-color:@service.GetTipo(tipo).Cor">@tipo</a>
+                                        <a asp-action="Index" asp-route-tipo="@tipo.ToLower()" class="btn my-2 text-white" style="background-color:@service.GetTipo(tipo).logo">@tipo</a>
                                     }
                                 </div>
                             </div>

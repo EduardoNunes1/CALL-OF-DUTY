@@ -39,7 +39,8 @@
             <div class="btn-group">
                 @foreach (var tipo in Model.Current.Tipo)
                 {
-                    <a asp-action="Index" asp-route-tipo="@tipo.ToLower()" class="btn btn-lg text-white"style="background-color:@service.GetTipo(tipo).Cor">@tipo</a>
+                    <a asp-action="Index" asp-route-tipo="@tipo.ToLower()" class="btn btn-lg text-white"
+                    style="background-color:@service.GetTipo(tipo).logo">@tipo</a>
                 }
             </div>
         </div>

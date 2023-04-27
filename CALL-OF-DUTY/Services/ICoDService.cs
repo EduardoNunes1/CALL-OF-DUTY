@@ -1,5 +1,5 @@
-using CALL_OF_DUTY.Models;
-namespace CALL_OF_DUTY.Services;
+using CallOfDuty.Models;
+namespace CallOfDuty.Services;
 
 public interface ICoDService
 {

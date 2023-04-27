@@ -1,4 +1,4 @@
-namespace CALL_OF_DUTY.Models
+namespace CallOfDuty.Models
 {
     public class DetailsDto
     {

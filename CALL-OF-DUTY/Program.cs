@@ -1,4 +1,4 @@
-using CALL_OF_DUTY.Services;
+using CallOfDuty.Services;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -6,11 +6,11 @@ builder.Services.AddControllersWithViews();
 
 builder.Services.AddSession();
 builder.Services.AddHttpContextAccessor();
-builder.Services.AddSingleton<ICoDService, CoDService>();
+builder.Services.AddSingleton<ICoDService, ICoDService>();
 
 var app = builder.Build();
 
-if (!app.Environment.IsDevelopment))
+if (!app.Environment.IsDevelopment())
 {
     app.UseExceptionHandler("/Home/Error");
     app.UseHsts();
@@ -29,4 +29,4 @@ app.MapControllerRoute(
     name:"default",
     pattern:"{controller=Home}/{action=Index}/{id?}");
 
-app.Rub();
+app.Run();

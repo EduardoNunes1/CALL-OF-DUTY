@@ -1,8 +1,8 @@
 ﻿using System.Diagnostics;
 using Microsoft.AspNetCore.Mvc;
-using CALL_OF_DUTY.Models;
-using CALL_OF_DUTY.Services;
-namespace CALL_OF_DUTY.Controllers;
+using CallOfDuty.Models;
+using CallOfDuty.Services;
+namespace CallOfDuty.Controllers;
 public class HomeController : Controller
 {
     private readonly ILogger<HomeController> _logger;
@@ -14,14 +14,14 @@ public class HomeController : Controller
     }
     public IActionResult Index(string tipo)
     {
-        var cods = _codService.GetCallOfDutyDto();
+        var cods = _codService.GetCallOfDuty();
         ViewData["filter"] = string.IsNullOrEmpty(tipo) ? "all" : tipo;
         return View(cods);
     }
     public IActionResult Details(int Numero)
     {
         var personagem = _codService.GetPersonagens(Numero);
-        Personagens.Tipos = _codService.GetTipos();
+
         return View(personagem);
     }
     public IActionResult Privacy()
