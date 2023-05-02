@@ -6,7 +6,7 @@ builder.Services.AddControllersWithViews();
 
 builder.Services.AddSession();
 builder.Services.AddHttpContextAccessor();
-builder.Services.AddSingleton<ICoDService, ICoDService>();
+builder.Services.AddSingleton<ICoDService, CoDService>();
 
 var app = builder.Build();
 

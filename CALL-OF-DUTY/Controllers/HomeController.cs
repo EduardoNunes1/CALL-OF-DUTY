@@ -14,7 +14,7 @@ public class HomeController : Controller
     }
     public IActionResult Index(string tipo)
     {
-        var cods = _codService.GetCallOfDuty();
+        var cods = _codService.GetCallOfDutyDto();
         ViewData["filter"] = string.IsNullOrEmpty(tipo) ? "all" : tipo;
         return View(cods);
     }

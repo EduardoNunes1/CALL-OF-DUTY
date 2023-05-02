@@ -3,7 +3,7 @@ using CallOfDuty.Models;
 
 namespace CallOfDuty.Services;
 
-public class CoDService
+public class CoDService : ICoDService
 {
     private readonly IHttpContextAccessor _session;
     private readonly string personagensFile = @"Data\personagens.json";
